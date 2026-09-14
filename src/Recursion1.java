@@ -110,30 +110,30 @@
 //---------------------------------------------------------
 
 //---------------------------------------------------------
-public class Recursion1 {
-    public static int printStack(int x, int n) {
-        if (n == 0) {
-            return 1;
-        }
-        if (x == 0) {
-            return 0;
-        }
-
-        if (n%2 == 0) {
-            return printStack(x, n/2) * printStack(x, n/2);
-        }
-
-        else {
-            return x * printStack(x, n/2) * printStack(x, n/2);
-        }
-    }
-
-    public static void main(String[] args) {
-        int output = printStack(3, 4);
-        System.out.println(output);
-
-    }
-}
+//public class Recursion1 {
+//    public static int printStack(int x, int n) {
+//        if (n == 0) {
+//            return 1;
+//        }
+//        if (x == 0) {
+//            return 0;
+//        }
+//
+//        if (n%2 == 0) {
+//            return printStack(x, n/2) * printStack(x, n/2);
+//        }
+//
+//        else {
+//            return x * printStack(x, n/2) * printStack(x, n/2);
+//        }
+//    }
+//
+//    public static void main(String[] args) {
+//        int output = printStack(3, 4);
+//        System.out.println(output);
+//
+//    }
+//}
 
 //---------------------------------------------------------
 
